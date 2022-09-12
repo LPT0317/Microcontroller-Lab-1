@@ -173,7 +173,7 @@ int main(void)
     /* USER CODE END WHILE */
 	  display7SEG(time, 0);
 	  display7SEG(time1, 1);
-	  HAL_Delay(1000);
+	  HAL_DELAY(1000);
 	  time--;
 	  time1--;
 	  if(time == 0) {

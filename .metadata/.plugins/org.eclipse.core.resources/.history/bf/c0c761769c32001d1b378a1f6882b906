@@ -154,68 +154,14 @@ int main(void)
   int time = 5;
   /* set 2 way east and west is green */
   int time1 = 3;
-  /* set 2 traffic light status:
-   * 1: red
-   * 2: yellow
-   * 3: green*/
-  int stt = 1;
-  int stt1 = 3;
-  /* set LED on north and south way */
-  HAL_GPIO_WritePin(RED1_GPIO_Port, RED1_Pin, GPIO_PIN_RESET);
-  HAL_GPIO_WritePin(YELLOW1_GPIO_Port, YELLOW1_Pin, GPIO_PIN_SET);
-  HAL_GPIO_WritePin(GREEN1_GPIO_Port, GREEN1_Pin, GPIO_PIN_SET);
-  /* set LED on east and west way */
-  HAL_GPIO_WritePin(RED2_GPIO_Port, RED2_Pin, GPIO_PIN_SET);
-  HAL_GPIO_WritePin(YELLOW2_GPIO_Port, YELLOW2_Pin, GPIO_PIN_SET);
-  HAL_GPIO_WritePin(GREEN2_GPIO_Port, GREEN2_Pin, GPIO_PIN_RESET);
   while (1)
   {
     /* USER CODE END WHILE */
 	  display7SEG(time, 0);
 	  display7SEG(time1, 1);
-	  HAL_Delay(1000);
+	  HAL_DELAY(1000);
 	  time--;
 	  time1--;
-	  if(time == 0) {
-		  if(stt == 1) {
-			  stt = 3;
-			  time = 3;
-			  HAL_GPIO_TogglePin(RED1_GPIO_Port, RED1_Pin);
-			  HAL_GPIO_TogglePin(GREEN1_GPIO_Port, GREEN1_Pin);
-		  }
-		  else if(stt == 2) {
-			  stt = 1;
-			  time = 5;
-			  HAL_GPIO_TogglePin(RED1_GPIO_Port, RED1_Pin);
-			  HAL_GPIO_TogglePin(YELLOW1_GPIO_Port, YELLOW1_Pin);
-		  }
-		  else {
-			  stt = 2;
-			  time = 2;
-			  HAL_GPIO_TogglePin(YELLOW1_GPIO_Port, YELLOW1_Pin);
-			  HAL_GPIO_TogglePin(GREEN1_GPIO_Port, GREEN1_Pin);
-		  }
-	  }
-	  if(time1 == 0) {
-		  if(stt1 == 1) {
-			  stt1 = 3;
-			  time1 = 3;
-			  HAL_GPIO_TogglePin(RED2_GPIO_Port, RED2_Pin);
-			  HAL_GPIO_TogglePin(GREEN2_GPIO_Port, GREEN2_Pin);
-		  }
-		  else if(stt1 == 2) {
-			  stt1 = 1;
-			  time1 = 5;
-			  HAL_GPIO_TogglePin(RED2_GPIO_Port, RED2_Pin);
-			  HAL_GPIO_TogglePin(YELLOW2_GPIO_Port, YELLOW2_Pin);
-		  }
-		  else {
-			  stt1 = 2;
-			  time1 = 2;
-			  HAL_GPIO_TogglePin(YELLOW2_GPIO_Port, YELLOW2_Pin);
-			  HAL_GPIO_TogglePin(GREEN2_GPIO_Port, GREEN2_Pin);
-		  }
-	  }
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
