@@ -148,12 +148,17 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   /* init counter */
   int counter = 0;
-  openAllClock();
+  /* init state:
+   * 0 LED is open
+   * 1 LED is off
+   */
+  int state = 0;
+  clearAllClock ();
   while (1)
   {
-	  clearNumberOnClock(counter);
-	  counter++;
-	  HAL_Delay(1000);
+	  if(state == 0) {
+
+	  }
   }
   /* USER CODE END 3 */
 }
