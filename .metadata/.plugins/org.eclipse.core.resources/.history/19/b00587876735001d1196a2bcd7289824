@@ -85,7 +85,7 @@ int main(void)
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
   /* turn num-th LED */
-  void setNumberOnClock(int num) {
+  void turnLED(int num) {
 	  if(num == 0) HAL_GPIO_WritePin(h0_GPIO_Port, h0_Pin, GPIO_PIN_RESET);
 	  if(num == 1) HAL_GPIO_WritePin(h1_GPIO_Port, h1_Pin, GPIO_PIN_RESET);
 	  if(num == 2) HAL_GPIO_WritePin(h2_GPIO_Port, h2_Pin, GPIO_PIN_RESET);
@@ -123,11 +123,9 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	  if(counter == 0) clearAllClock();
-	  setNumberOnClock(counter);
+	  turnLED(counter);
 	  counter++;
 	  HAL_Delay(1000);
-	  if(counter == 12) counter = 0;
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
