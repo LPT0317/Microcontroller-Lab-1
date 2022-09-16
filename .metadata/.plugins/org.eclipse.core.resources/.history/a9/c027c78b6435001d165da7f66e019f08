@@ -74,6 +74,8 @@ int main(void)
 
   /* USER CODE BEGIN Init */
 
+  /* USER CODE END Init */
+
   /* Configure the system clock */
   SystemClock_Config();
 
@@ -84,11 +86,9 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
-  /* turn num-th LED */
   void turnLED(int num) {
 	  if(num == 0) HAL_GPIO_WritePin(h0_GPIO_Port, h0_Pin, GPIO_PIN_RESET);
 	  if(num == 1) HAL_GPIO_WritePin(h1_GPIO_Port, h1_Pin, GPIO_PIN_RESET);
-	  if(num == 2) HAL_GPIO_WritePin(h2_GPIO_Port, h2_Pin, GPIO_PIN_RESET);
 	  if(num == 3) HAL_GPIO_WritePin(h3_GPIO_Port, h3_Pin, GPIO_PIN_RESET);
 	  if(num == 4) HAL_GPIO_WritePin(h4_GPIO_Port, h4_Pin, GPIO_PIN_RESET);
 	  if(num == 5) HAL_GPIO_WritePin(h5_GPIO_Port, h5_Pin, GPIO_PIN_RESET);
@@ -100,30 +100,13 @@ int main(void)
 	  if(num == 11) HAL_GPIO_WritePin(h11_GPIO_Port, h11_Pin, GPIO_PIN_RESET);
   }
   /* USER CODE END 2 */
-  /* set all LED turn off */
-  HAL_GPIO_WritePin(h0_GPIO_Port, h0_Pin, GPIO_PIN_SET);
-  HAL_GPIO_WritePin(h1_GPIO_Port, h1_Pin, GPIO_PIN_SET);
-  HAL_GPIO_WritePin(h2_GPIO_Port, h2_Pin, GPIO_PIN_SET);
-  HAL_GPIO_WritePin(h3_GPIO_Port, h3_Pin, GPIO_PIN_SET);
-  HAL_GPIO_WritePin(h4_GPIO_Port, h4_Pin, GPIO_PIN_SET);
-  HAL_GPIO_WritePin(h5_GPIO_Port, h5_Pin, GPIO_PIN_SET);
-  HAL_GPIO_WritePin(h6_GPIO_Port, h6_Pin, GPIO_PIN_SET);
-  HAL_GPIO_WritePin(h7_GPIO_Port, h7_Pin, GPIO_PIN_SET);
-  HAL_GPIO_WritePin(h8_GPIO_Port, h8_Pin, GPIO_PIN_SET);
-  HAL_GPIO_WritePin(h9_GPIO_Port, h9_Pin, GPIO_PIN_SET);
-  HAL_GPIO_WritePin(h10_GPIO_Port, h10_Pin, GPIO_PIN_SET);
-  HAL_GPIO_WritePin(h11_GPIO_Port, h11_Pin, GPIO_PIN_SET);
-  /* USER CODE END Init */
+
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  /* init counter */
-  int counter = 0;
   while (1)
   {
     /* USER CODE END WHILE */
-	  turnLED(counter);
-	  counter++;
-	  HAL_Delay(1000);
+	  HAL
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */

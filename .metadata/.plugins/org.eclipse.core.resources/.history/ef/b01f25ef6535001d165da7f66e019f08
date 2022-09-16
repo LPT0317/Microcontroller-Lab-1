@@ -100,7 +100,7 @@ int main(void)
 	  if(num == 11) HAL_GPIO_WritePin(h11_GPIO_Port, h11_Pin, GPIO_PIN_RESET);
   }
   /* USER CODE END 2 */
-  /* set all LED turn off */
+
   HAL_GPIO_WritePin(h0_GPIO_Port, h0_Pin, GPIO_PIN_SET);
   HAL_GPIO_WritePin(h1_GPIO_Port, h1_Pin, GPIO_PIN_SET);
   HAL_GPIO_WritePin(h2_GPIO_Port, h2_Pin, GPIO_PIN_SET);
