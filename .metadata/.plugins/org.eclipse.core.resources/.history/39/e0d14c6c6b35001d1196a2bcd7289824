@@ -143,16 +143,16 @@ int main(void)
 		  second = 0;
 	  }
 	  if(minute == 60) {
-		  hour++;
+		  hour = 0;
 		  minute = 0;
 	  }
 	  if(hour == 12) {
 		  hour = 0;
 	  }
-	  HAL_Delay(10);
+	  HAL_Delay(1000);
 	  clearAllClock();
-	  setNumberOnClock(second / 5);
-	  setNumberOnClock(minute / 5);
+	  setNumberOnClock(second);
+	  setNumberOnClock(minute);
 	  setNumberOnClock(hour);
   }
   /* USER CODE END 3 */

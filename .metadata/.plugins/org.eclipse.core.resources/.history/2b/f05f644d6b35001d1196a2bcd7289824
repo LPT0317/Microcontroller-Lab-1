@@ -137,23 +137,23 @@ int main(void)
   setNumberOnClock(0);
   while (1)
   {
+	  HAL_Delay(10);
+	  clearNumberOnClock(second / 5);
 	  second++;
+	  setNumberOnClock(second / 5);
+	  clearNumberOnClock(minute / 5);
 	  if(second == 60) {
 		  minute++;
 		  second = 0;
 	  }
+	  setNumberOnClock(minute / 5);
+	  clearNumberOnClock(hour);
 	  if(minute == 60) {
 		  hour++;
 		  minute = 0;
 	  }
-	  if(hour == 12) {
-		  hour = 0;
-	  }
-	  HAL_Delay(10);
-	  clearAllClock();
-	  setNumberOnClock(second / 5);
-	  setNumberOnClock(minute / 5);
 	  setNumberOnClock(hour);
+	  if(hour == 12) hour = 0;
   }
   /* USER CODE END 3 */
 }

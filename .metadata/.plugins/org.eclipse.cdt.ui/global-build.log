@@ -195,3 +195,171 @@ Finished building: Lab1.list
  
  
  
+09:51:46 **** Incremental Build of configuration Debug for project Lab1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:102:8: warning: 'clearAllClock' defined but not used [-Wunused-function]
+  102 |   void clearAllClock () {
+      |        ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Lab1.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\MCU\Microcontroller-Lab-1\Lab1\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lab1.elf
+ 
+arm-none-eabi-size   Lab1.elf 
+arm-none-eabi-objdump -h -S  Lab1.elf  > "Lab1.list"
+arm-none-eabi-objcopy  -O ihex  Lab1.elf  "Lab1.hex"
+arm-none-eabi-objcopy  -O binary  Lab1.elf  "Lab1.bin"
+   text	   data	    bss	    dec	    hex	filename
+   5196	     20	   1572	   6788	   1a84	Lab1.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lab1.hex
+Finished building: Lab1.bin
+ 
+ 
+Finished building: Lab1.list
+ 
+09:52:25 **** Incremental Build of configuration Debug for project Lab1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:133:18: error: expected ';' before 'int'
+  133 |   clearAllClock()
+      |                  ^
+      |                  ;
+  134 |   int hour = 0;
+      |   ~~~             
+../Core/Src/main.c:150:23: error: 'hour' undeclared (first use in this function)
+  150 |    clearNumberOnClock(hour);
+      |                       ^~~~
+../Core/Src/main.c:150:23: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+09:52:49 **** Incremental Build of configuration Debug for project Lab1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Lab1.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\MCU\Microcontroller-Lab-1\Lab1\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lab1.elf
+ 
+arm-none-eabi-size   Lab1.elf 
+arm-none-eabi-objdump -h -S  Lab1.elf  > "Lab1.list"
+arm-none-eabi-objcopy  -O ihex  Lab1.elf  "Lab1.hex"
+arm-none-eabi-objcopy  -O binary  Lab1.elf  "Lab1.bin"
+   text	   data	    bss	    dec	    hex	filename
+   5364	     20	   1572	   6956	   1b2c	Lab1.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lab1.hex
+Finished building: Lab1.bin
+Finished building: Lab1.list
+ 
+ 
+ 
+09:53:59 **** Incremental Build of configuration Debug for project Lab1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Lab1.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\MCU\Microcontroller-Lab-1\Lab1\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lab1.elf
+ 
+arm-none-eabi-size   Lab1.elf 
+arm-none-eabi-objdump -h -S  Lab1.elf  > "Lab1.list"
+arm-none-eabi-objcopy  -O ihex  Lab1.elf  "Lab1.hex"
+arm-none-eabi-objcopy  -O binary  Lab1.elf  "Lab1.bin"
+   text	   data	    bss	    dec	    hex	filename
+   5364	     20	   1572	   6956	   1b2c	Lab1.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lab1.hex
+Finished building: Lab1.bin
+ 
+Finished building: Lab1.list
+ 
+ 
+09:54:28 **** Incremental Build of configuration Debug for project Lab1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Lab1.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\MCU\Microcontroller-Lab-1\Lab1\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lab1.elf
+ 
+arm-none-eabi-size   Lab1.elf 
+arm-none-eabi-objdump -h -S  Lab1.elf  > "Lab1.list"
+arm-none-eabi-objcopy  -O ihex  Lab1.elf  "Lab1.hex"
+arm-none-eabi-objcopy  -O binary  Lab1.elf  "Lab1.bin"
+   text	   data	    bss	    dec	    hex	filename
+   5364	     20	   1572	   6956	   1b2c	Lab1.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lab1.hex
+Finished building: Lab1.bin
+ 
+Finished building: Lab1.list
+ 
+ 
+09:57:35 **** Incremental Build of configuration Debug for project Lab1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:116:8: warning: 'clearNumberOnClock' defined but not used [-Wunused-function]
+  116 |   void clearNumberOnClock(int num) {
+      |        ^~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Lab1.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\MCU\Microcontroller-Lab-1\Lab1\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lab1.elf
+ 
+arm-none-eabi-size   Lab1.elf 
+arm-none-eabi-objdump -h -S  Lab1.elf  > "Lab1.list"
+arm-none-eabi-objcopy  -O ihex  Lab1.elf  "Lab1.hex"
+   text	   data	    bss	    dec	    hex	filename
+   5048	     20	   1572	   6640	   19f0	Lab1.elf
+arm-none-eabi-objcopy  -O binary  Lab1.elf  "Lab1.bin"
+Finished building: default.size.stdout
+ 
+Finished building: Lab1.hex
+Finished building: Lab1.bin
+ 
+Finished building: Lab1.list
+ 
+ 
+09:58:38 **** Incremental Build of configuration Debug for project Lab1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:116:8: warning: 'clearNumberOnClock' defined but not used [-Wunused-function]
+  116 |   void clearNumberOnClock(int num) {
+      |        ^~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Lab1.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\MCU\Microcontroller-Lab-1\Lab1\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lab1.elf
+ 
+arm-none-eabi-size   Lab1.elf 
+arm-none-eabi-objdump -h -S  Lab1.elf  > "Lab1.list"
+arm-none-eabi-objcopy  -O ihex  Lab1.elf  "Lab1.hex"
+   text	   data	    bss	    dec	    hex	filename
+   5080	     20	   1572	   6672	   1a10	Lab1.elf
+arm-none-eabi-objcopy  -O binary  Lab1.elf  "Lab1.bin"
+Finished building: default.size.stdout
+ 
+Finished building: Lab1.hex
+Finished building: Lab1.bin
+ 
+ 
+Finished building: Lab1.list
+ 
+10:00:22 **** Incremental Build of configuration Debug for project Lab1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:116:8: warning: 'clearNumberOnClock' defined but not used [-Wunused-function]
+  116 |   void clearNumberOnClock(int num) {
+      |        ^~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Lab1.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\MCU\Microcontroller-Lab-1\Lab1\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lab1.elf
+ 
+arm-none-eabi-size   Lab1.elf 
+arm-none-eabi-objdump -h -S  Lab1.elf  > "Lab1.list"
+arm-none-eabi-objcopy  -O ihex  Lab1.elf  "Lab1.hex"
+   text	   data	    bss	    dec	    hex	filename
+   5080	     20	   1572	   6672	   1a10	Lab1.elf
+arm-none-eabi-objcopy  -O binary  Lab1.elf  "Lab1.bin"
+Finished building: default.size.stdout
+ 
+Finished building: Lab1.hex
+Finished building: Lab1.bin
+ 
+Finished building: Lab1.list
+ 
+ 

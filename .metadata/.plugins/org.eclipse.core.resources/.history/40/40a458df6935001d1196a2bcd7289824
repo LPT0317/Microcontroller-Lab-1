@@ -99,7 +99,9 @@ int main(void)
 	  if(num == 10) HAL_GPIO_WritePin(h10_GPIO_Port, h10_Pin, GPIO_PIN_RESET);
 	  if(num == 11) HAL_GPIO_WritePin(h11_GPIO_Port, h11_Pin, GPIO_PIN_RESET);
   }
-  void clearAllClock() {
+  /* USER CODE END 2 */
+  /* set all LED turn off */
+  void clearAllClock () {
 	  HAL_GPIO_WritePin(h0_GPIO_Port, h0_Pin, GPIO_PIN_SET);
 	  HAL_GPIO_WritePin(h1_GPIO_Port, h1_Pin, GPIO_PIN_SET);
 	  HAL_GPIO_WritePin(h2_GPIO_Port, h2_Pin, GPIO_PIN_SET);
@@ -127,33 +129,31 @@ int main(void)
 	  if(num == 10) HAL_GPIO_WritePin(h10_GPIO_Port, h10_Pin, GPIO_PIN_SET);
 	  if(num == 11) HAL_GPIO_WritePin(h11_GPIO_Port, h11_Pin, GPIO_PIN_SET);
   }
+  void openAllClock() {
+	  HAL_GPIO_WritePin(h0_GPIO_Port, h0_Pin, GPIO_PIN_RESET);
+	  HAL_GPIO_WritePin(h1_GPIO_Port, h1_Pin, GPIO_PIN_RESET);
+	  HAL_GPIO_WritePin(h2_GPIO_Port, h2_Pin, GPIO_PIN_RESET);
+	  HAL_GPIO_WritePin(h3_GPIO_Port, h3_Pin, GPIO_PIN_RESET);
+	  HAL_GPIO_WritePin(h4_GPIO_Port, h4_Pin, GPIO_PIN_RESET);
+	  HAL_GPIO_WritePin(h5_GPIO_Port, h5_Pin, GPIO_PIN_RESET);
+	  HAL_GPIO_WritePin(h6_GPIO_Port, h6_Pin, GPIO_PIN_RESET);
+	  HAL_GPIO_WritePin(h7_GPIO_Port, h7_Pin, GPIO_PIN_RESET);
+	  HAL_GPIO_WritePin(h8_GPIO_Port, h8_Pin, GPIO_PIN_RESET);
+	  HAL_GPIO_WritePin(h9_GPIO_Port, h9_Pin, GPIO_PIN_RESET);
+	  HAL_GPIO_WritePin(h10_GPIO_Port, h10_Pin, GPIO_PIN_RESET);
+	  HAL_GPIO_WritePin(h11_GPIO_Port, h11_Pin, GPIO_PIN_RESET);
+  }
   /* USER CODE END Init */
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  clearAllClock();
-  int hour = 0;
-  int minute = 0;
-  int second = 0;
-  setNumberOnClock(0);
+  /* init counter */
+  int counter = 0;
+  openAllClock();
   while (1)
   {
-	  second++;
-	  if(second == 60) {
-		  minute++;
-		  second = 0;
-	  }
-	  if(minute == 60) {
-		  hour++;
-		  minute = 0;
-	  }
-	  if(hour == 12) {
-		  hour = 0;
-	  }
-	  HAL_Delay(10);
-	  clearAllClock();
-	  setNumberOnClock(second / 5);
-	  setNumberOnClock(minute / 5);
-	  setNumberOnClock(hour);
+	  clearNumberOnClock(counter);
+	  counter++;
+	  HAL_Delay(1000);
   }
   /* USER CODE END 3 */
 }
