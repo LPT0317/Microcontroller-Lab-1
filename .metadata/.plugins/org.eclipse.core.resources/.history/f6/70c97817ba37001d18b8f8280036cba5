@@ -91,11 +91,11 @@ int main(void)
   /* total time delay 10s */
   int time = 10;
   /* set LED_RED on */
-  HAL_GPIO_WritePin(GPIOA, LED_RED_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, LED_RED_Pin, GPIO_PIN_SET);
   /* set LED_YELLOW off */
-  HAL_GPIO_WritePin(GPIOA, LED_YELLOW_Pin, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(LED_YELLOW_GPIO_Port, LED_YELLOW_Pin, GPIO_PIN_RESET);
   /* set LED_GREEN off */
-  HAL_GPIO_WritePin(GPIOA, LED_GREEN_Pin, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(LED_GREEN_GPIO_Port, LED_GREEN_Pin, GPIO_PIN_RESET);
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
@@ -104,17 +104,17 @@ int main(void)
 	  HAL_Delay(1000);
 	  time--;
 	  if(time == 5) {
-		  HAL_GPIO_TogglePin(GPIOA, LED_RED_Pin);
-		  HAL_GPIO_TogglePin(GPIOA, LED_YELLOW_Pin);
+		  HAL_GPIO_TogglePin(LED_RED_GPIO_Port, LED_RED_Pin);
+		  HAL_GPIO_TogglePin(LED_YELLOW_GPIO_Port, LED_YELLOW_Pin);
 	  }
 	  if(time == 3) {
-		  HAL_GPIO_TogglePin(GPIOA, LED_YELLOW_Pin);
-		  HAL_GPIO_TogglePin(GPIOA, LED_GREEN_Pin);
+		  HAL_GPIO_TogglePin(LED_YELLOW_GPIO_Port, LED_YELLOW_Pin);
+		  HAL_GPIO_TogglePin(LED_GREEN_GPIO_Port, LED_GREEN_Pin);
 	  }
 	  if(time == 0) {
 		  time = 10;
-		  HAL_GPIO_TogglePin(GPIOA, LED_GREEN_Pin);
-		  HAL_GPIO_TogglePin(GPIOA, LED_RED_Pin);
+		  HAL_GPIO_TogglePin(LED_GREEN_GPIO_Port, LED_GREEN_Pin);
+		  HAL_GPIO_TogglePin(LED_RED_GPIO_Port, LED_RED_Pin);
 	  }
     /* USER CODE BEGIN 3 */
   }
