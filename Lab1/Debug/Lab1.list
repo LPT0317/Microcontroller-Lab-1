@@ -115,14 +115,14 @@ int main(void)
  800015e:	2302      	movs	r3, #2
  8000160:	607b      	str	r3, [r7, #4]
   /* set LED_RED on */
-  HAL_GPIO_WritePin(LED_RED_GPIO_Port, LED_RED_Pin, GPIO_PIN_SET);
- 8000162:	2201      	movs	r2, #1
+  HAL_GPIO_WritePin(GPIOA, LED_RED_Pin, GPIO_PIN_RESET);
+ 8000162:	2200      	movs	r2, #0
  8000164:	2120      	movs	r1, #32
  8000166:	480e      	ldr	r0, [pc, #56]	; (80001a0 <main+0x54>)
  8000168:	f000 fbfa 	bl	8000960 <HAL_GPIO_WritePin>
   /* set LED_YELLOW off */
-  HAL_GPIO_WritePin(LED_YELLOW_GPIO_Port, LED_YELLOW_Pin, GPIO_PIN_RESET);
- 800016c:	2200      	movs	r2, #0
+  HAL_GPIO_WritePin(GPIOA, LED_YELLOW_Pin, GPIO_PIN_SET);
+ 800016c:	2201      	movs	r2, #1
  800016e:	2140      	movs	r1, #64	; 0x40
  8000170:	480b      	ldr	r0, [pc, #44]	; (80001a0 <main+0x54>)
  8000172:	f000 fbf5 	bl	8000960 <HAL_GPIO_WritePin>
@@ -142,11 +142,11 @@ int main(void)
  8000184:	687b      	ldr	r3, [r7, #4]
  8000186:	2b00      	cmp	r3, #0
  8000188:	d1f5      	bne.n	8000176 <main+0x2a>
-		  HAL_GPIO_TogglePin(LED_RED_GPIO_Port, LED_RED_Pin);
+		  HAL_GPIO_TogglePin(GPIOA, LED_RED_Pin);
  800018a:	2120      	movs	r1, #32
  800018c:	4804      	ldr	r0, [pc, #16]	; (80001a0 <main+0x54>)
  800018e:	f000 fbff 	bl	8000990 <HAL_GPIO_TogglePin>
-		  HAL_GPIO_TogglePin(LED_YELLOW_GPIO_Port, LED_YELLOW_Pin);
+		  HAL_GPIO_TogglePin(GPIOA, LED_YELLOW_Pin);
  8000192:	2140      	movs	r1, #64	; 0x40
  8000194:	4802      	ldr	r0, [pc, #8]	; (80001a0 <main+0x54>)
  8000196:	f000 fbfb 	bl	8000990 <HAL_GPIO_TogglePin>
