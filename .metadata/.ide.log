@@ -2292,3 +2292,67 @@
 2022-09-20 07:49:28,258 [INFO] ProjectBuilder:3789 - Time for Generating toolchain IDE Files: 4486mS.
 2022-09-20 07:49:28,259 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.
 2022-09-20 07:49:28,262 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.
+2022-09-20 07:51:37,271 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 538737320 Bytes (763363328)
+2022-09-20 07:51:38,933 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 556412064 Bytes (763363328)
+2022-09-20 07:51:39,965 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 589068968 Bytes (763363328)
+2022-09-20 07:51:40,758 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2022-09-20 07:51:40,758 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2022-09-20 07:51:40,758 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2022-09-20 07:51:40,759 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2022-09-20 07:51:40,760 [INFO] CodeGenerator:663 - code generatio: config db path: D:\Apps\STM32CubeIDE_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.3.0.202107141111\\db\
+2022-09-20 07:51:41,316 [INFO] CodeEngine:239 - oldGeneratedFile, D:\MCU\Microcontroller-Lab-1\Lab1\MXTmpFiles\license.tmp_save
+2022-09-20 07:51:41,464 [INFO] CodeEngine:257 - Generated code: D:\MCU\Microcontroller-Lab-1\Lab1\MXTmpFiles\license.tmp
+2022-09-20 07:51:41,485 [INFO] CodeEngine:239 - oldGeneratedFile, D:\MCU\Microcontroller-Lab-1\Lab1\MXTmpFiles\gpio.tmp_save
+2022-09-20 07:51:41,627 [INFO] CodeEngine:257 - Generated code: D:\MCU\Microcontroller-Lab-1\Lab1\MXTmpFiles\gpio.tmp
+2022-09-20 07:51:41,665 [INFO] CodeEngine:239 - oldGeneratedFile, D:\MCU\Microcontroller-Lab-1\Lab1\Core\Src\stm32f1xx_it.c_save
+2022-09-20 07:51:41,841 [INFO] CodeEngine:257 - Generated code: D:\MCU\Microcontroller-Lab-1\Lab1\Core\Src\stm32f1xx_it.c
+2022-09-20 07:51:41,847 [INFO] CodeEngine:239 - oldGeneratedFile, D:\MCU\Microcontroller-Lab-1\Lab1\Core\Inc\stm32f1xx_it.h_save
+2022-09-20 07:51:41,983 [INFO] CodeEngine:257 - Generated code: D:\MCU\Microcontroller-Lab-1\Lab1\Core\Inc\stm32f1xx_it.h
+2022-09-20 07:51:42,013 [INFO] CodeEngine:239 - oldGeneratedFile, D:\MCU\Microcontroller-Lab-1\Lab1\Core\Src\stm32f1xx_hal_msp.c_save
+2022-09-20 07:51:42,229 [INFO] CodeEngine:257 - Generated code: D:\MCU\Microcontroller-Lab-1\Lab1\Core\Src\stm32f1xx_hal_msp.c
+2022-09-20 07:51:42,234 [INFO] CodeEngine:239 - oldGeneratedFile, D:\MCU\Microcontroller-Lab-1\Lab1\MXTmpFiles\system.tmp_save
+2022-09-20 07:51:42,358 [INFO] CodeEngine:257 - Generated code: D:\MCU\Microcontroller-Lab-1\Lab1\MXTmpFiles\system.tmp
+2022-09-20 07:51:42,381 [INFO] CodeEngine:239 - oldGeneratedFile, D:\MCU\Microcontroller-Lab-1\Lab1\Core\Inc\stm32f1xx_hal_conf.h_save
+2022-09-20 07:51:42,571 [INFO] CodeEngine:257 - Generated code: D:\MCU\Microcontroller-Lab-1\Lab1\Core\Inc\stm32f1xx_hal_conf.h
+2022-09-20 07:51:42,628 [INFO] CodeEngine:239 - oldGeneratedFile, D:\MCU\Microcontroller-Lab-1\Lab1\Core\Inc\main.h_save
+2022-09-20 07:51:42,819 [INFO] CodeEngine:257 - Generated code: D:\MCU\Microcontroller-Lab-1\Lab1\Core\Inc\main.h
+2022-09-20 07:51:42,839 [INFO] CodeEngine:239 - oldGeneratedFile, D:\MCU\Microcontroller-Lab-1\Lab1\Core\Src\main.c_save
+2022-09-20 07:51:43,067 [INFO] CodeEngine:257 - Generated code: D:\MCU\Microcontroller-Lab-1\Lab1\Core\Src\main.c
+2022-09-20 07:51:45,064 [INFO] ProjectBuilder:2578 - Time for Copy HAL[1] : 295mS.
+2022-09-20 07:51:45,070 [INFO] ProjectBuilder:3622 - Project Generator version: 3.14.1
+2022-09-20 07:51:46,058 [INFO] ConfigFileManager:1271 - The Die is : DIE412
+2022-09-20 07:51:50,525 [INFO] ProjectBuilder:3789 - Time for Generating toolchain IDE Files: 5455mS.
+2022-09-20 07:51:50,527 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 1mS.
+2022-09-20 07:51:50,532 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.
+2022-09-20 08:02:38,792 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 670621344 Bytes (834666496)
+2022-09-20 08:02:38,901 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 683541976 Bytes (834666496)
+2022-09-20 08:02:39,986 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 293566264 Bytes (834666496)
+2022-09-20 08:02:40,545 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2022-09-20 08:02:40,545 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2022-09-20 08:02:40,545 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2022-09-20 08:02:40,546 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2022-09-20 08:02:40,547 [INFO] CodeGenerator:663 - code generatio: config db path: D:\Apps\STM32CubeIDE_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.3.0.202107141111\\db\
+2022-09-20 08:02:41,072 [INFO] CodeEngine:239 - oldGeneratedFile, D:\MCU\Microcontroller-Lab-1\Lab1\MXTmpFiles\license.tmp_save
+2022-09-20 08:02:41,199 [INFO] CodeEngine:257 - Generated code: D:\MCU\Microcontroller-Lab-1\Lab1\MXTmpFiles\license.tmp
+2022-09-20 08:02:41,230 [INFO] CodeEngine:239 - oldGeneratedFile, D:\MCU\Microcontroller-Lab-1\Lab1\MXTmpFiles\gpio.tmp_save
+2022-09-20 08:02:41,376 [INFO] CodeEngine:257 - Generated code: D:\MCU\Microcontroller-Lab-1\Lab1\MXTmpFiles\gpio.tmp
+2022-09-20 08:02:41,425 [INFO] CodeEngine:239 - oldGeneratedFile, D:\MCU\Microcontroller-Lab-1\Lab1\Core\Src\stm32f1xx_it.c_save
+2022-09-20 08:02:41,606 [INFO] CodeEngine:257 - Generated code: D:\MCU\Microcontroller-Lab-1\Lab1\Core\Src\stm32f1xx_it.c
+2022-09-20 08:02:41,612 [INFO] CodeEngine:239 - oldGeneratedFile, D:\MCU\Microcontroller-Lab-1\Lab1\Core\Inc\stm32f1xx_it.h_save
+2022-09-20 08:02:41,746 [INFO] CodeEngine:257 - Generated code: D:\MCU\Microcontroller-Lab-1\Lab1\Core\Inc\stm32f1xx_it.h
+2022-09-20 08:02:41,770 [INFO] CodeEngine:239 - oldGeneratedFile, D:\MCU\Microcontroller-Lab-1\Lab1\Core\Src\stm32f1xx_hal_msp.c_save
+2022-09-20 08:02:41,967 [INFO] CodeEngine:257 - Generated code: D:\MCU\Microcontroller-Lab-1\Lab1\Core\Src\stm32f1xx_hal_msp.c
+2022-09-20 08:02:41,971 [INFO] CodeEngine:239 - oldGeneratedFile, D:\MCU\Microcontroller-Lab-1\Lab1\MXTmpFiles\system.tmp_save
+2022-09-20 08:02:42,089 [INFO] CodeEngine:257 - Generated code: D:\MCU\Microcontroller-Lab-1\Lab1\MXTmpFiles\system.tmp
+2022-09-20 08:02:42,112 [INFO] CodeEngine:239 - oldGeneratedFile, D:\MCU\Microcontroller-Lab-1\Lab1\Core\Inc\stm32f1xx_hal_conf.h_save
+2022-09-20 08:02:42,300 [INFO] CodeEngine:257 - Generated code: D:\MCU\Microcontroller-Lab-1\Lab1\Core\Inc\stm32f1xx_hal_conf.h
+2022-09-20 08:02:42,353 [INFO] CodeEngine:239 - oldGeneratedFile, D:\MCU\Microcontroller-Lab-1\Lab1\Core\Inc\main.h_save
+2022-09-20 08:02:42,524 [INFO] CodeEngine:257 - Generated code: D:\MCU\Microcontroller-Lab-1\Lab1\Core\Inc\main.h
+2022-09-20 08:02:42,541 [INFO] CodeEngine:239 - oldGeneratedFile, D:\MCU\Microcontroller-Lab-1\Lab1\Core\Src\main.c_save
+2022-09-20 08:02:42,792 [INFO] CodeEngine:257 - Generated code: D:\MCU\Microcontroller-Lab-1\Lab1\Core\Src\main.c
+2022-09-20 08:02:44,698 [INFO] ProjectBuilder:2578 - Time for Copy HAL[1] : 288mS.
+2022-09-20 08:02:44,703 [INFO] ProjectBuilder:3622 - Project Generator version: 3.14.1
+2022-09-20 08:02:45,577 [INFO] ConfigFileManager:1271 - The Die is : DIE412
+2022-09-20 08:02:49,065 [INFO] ProjectBuilder:3789 - Time for Generating toolchain IDE Files: 4362mS.
+2022-09-20 08:02:49,066 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.
+2022-09-20 08:02:49,069 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.

@@ -119,13 +119,13 @@ int main(void)
 		  }
 		  if(time == 0) {
 			//RED1 10
+			HAL_GPIO_TogglePin(GPIOA, D2_Pin);
 			HAL_GPIO_TogglePin(GPIOB, D3_Pin);
 			//GREEN2 01
 			HAL_GPIO_TogglePin(GPIOB, D4_Pin);
 			HAL_GPIO_TogglePin(GPIOB, D5_Pin);
 			time = 10;
 		  }
-      }
       /* USER CODE BEGIN 3 */
 }
 
