@@ -120,15 +120,14 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   /* init counter */
   int counter = 0;
-  clearAllClock();
   while (1)
   {
     /* USER CODE END WHILE */
-	  if(counter == 13) counter = 0;
-	  if(counter == 12) clearAllClock();
+	  if(counter == 0) clearAllClock();
 	  setNumberOnClock(counter);
 	  counter++;
 	  HAL_Delay(1000);
+	  if(counter == 12) counter = 0;
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
