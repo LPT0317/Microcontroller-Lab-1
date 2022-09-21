@@ -151,10 +151,7 @@ int main(void)
   openAllClock();
   while (1)
   {
-	  if(counter == 12) {
-		  openAllClock();
-		  counter = 0;
-	  }
+	  if(counter == 12) openAllClock();
 	  clearNumberOnClock(counter);
 	  counter++;
 	  HAL_Delay(1000);
