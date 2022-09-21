@@ -1,4 +1,4 @@
-main.c:88:8:turnLED	16	static
+main.c:88:8:setNumberOnClock	16	static
 main.c:64:5:main	16	static
 main.c:104:8:clearAllClock	16	static
 main.c:140:6:SystemClock_Config	72	static
