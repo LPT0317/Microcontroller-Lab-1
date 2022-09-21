@@ -129,23 +129,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	  if( counter >= 10) counter = 0;
-	  display7SEG ( counter ++) ;
-	  HAL_Delay (1000) ;
-	  T--;
-	  if(T == 7) {
-		  HAL_GPIO_TogglePin(GPIOA, LED6_Pin | LED5_Pin);
-	  }
-	  if(T == 5) {
-		  HAL_GPIO_TogglePin(GPIOA, LED1_Pin | LED3_Pin | LED5_Pin | LED4_Pin);
-	  }
-	  if(T == 3) {
-		  HAL_GPIO_TogglePin(GPIOA, LED3_Pin | LED2_Pin);
-	  }
-	  if(T == 0) {
-		  HAL_GPIO_TogglePin(GPIOA, LED1_Pin | LED2_Pin | LED6_Pin | LED4_Pin);
-		  T = 10;
-	  }
+
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
