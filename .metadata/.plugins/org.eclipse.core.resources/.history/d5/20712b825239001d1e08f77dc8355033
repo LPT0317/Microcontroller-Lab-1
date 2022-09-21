@@ -101,6 +101,10 @@ int main(void)
   }
   /* USER CODE END 2 */
   /* set all LED turn off */
+  HAL_GPIO_WritePin(GPIOA, h0_Pin | h1_Pin | h2_Pin |
+		  	  	  	  	   h3_Pin | h4_Pin | h5_Pin |
+						   h6_Pin | h7_Pin | h8_Pin |
+						   h9_Pin | h10_Pin | h11_Pin, GPIO_PIN_SET);
   /* USER CODE END Init */
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
@@ -109,13 +113,8 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	  HAL_GPIO_WritePin(GPIOA, h0_Pin | h1_Pin | h2_Pin |
-			  	  	  	  	   h3_Pin | h4_Pin | h5_Pin |
-							   h6_Pin | h7_Pin | h8_Pin |
-							   h9_Pin | h10_Pin | h11_Pin, GPIO_PIN_SET);
 	  turnLED(counter);
 	  counter++;
-	  if(counter == 12) counter = 0;
 	  HAL_Delay(1000);
     /* USER CODE BEGIN 3 */
   }
