@@ -92,20 +92,20 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   void turn7SegLed(int a, int b, int c, int d, int e, int f, int g) {
-	  if(a == 0) HAL_GPIO_WritePin(GPIOB, a_Pin, GPIO_PIN_RESET);
-	  else HAL_GPIO_WritePin(GPIOB, a_Pin, GPIO_PIN_SET);
-	  if(b == 0) HAL_GPIO_WritePin(GPIOB, b_Pin, GPIO_PIN_RESET);
-	  else HAL_GPIO_WritePin(GPIOB, b_Pin, GPIO_PIN_SET);
-	  if(c == 0) HAL_GPIO_WritePin(GPIOB, c_Pin, GPIO_PIN_RESET);
-	  else HAL_GPIO_WritePin(GPIOB, c_Pin, GPIO_PIN_SET);
-	  if(d == 0) HAL_GPIO_WritePin(GPIOB, d_Pin, GPIO_PIN_RESET);
-	  else HAL_GPIO_WritePin(GPIOB, d_Pin, GPIO_PIN_SET);
-	  if(e == 0) HAL_GPIO_WritePin(GPIOB, e_Pin, GPIO_PIN_RESET);
-	  else HAL_GPIO_WritePin(GPIOB, e_Pin, GPIO_PIN_SET);
-	  if(f == 0) HAL_GPIO_WritePin(GPIOB, f_Pin, GPIO_PIN_RESET);
-	  else HAL_GPIO_WritePin(GPIOB, f_Pin, GPIO_PIN_SET);
-	  if(g == 0) HAL_GPIO_WritePin(GPIOB, g_Pin, GPIO_PIN_RESET);
-	  else HAL_GPIO_WritePin(GPIOB, g_Pin, GPIO_PIN_SET);
+	  if(a == 0) HAL_GPIO_WritePin(GPIOA, a_Pin, GPIO_PIN_RESET);
+	  else HAL_GPIO_WritePin(GPIOA, a_Pin, GPIO_PIN_SET);
+	  if(b == 0) HAL_GPIO_WritePin(GPIOA, b_Pin, GPIO_PIN_RESET);
+	  else HAL_GPIO_WritePin(GPIOA, b_Pin, GPIO_PIN_SET);
+	  if(c == 0) HAL_GPIO_WritePin(GPIOA, c_Pin, GPIO_PIN_RESET);
+	  else HAL_GPIO_WritePin(GPIOA, c_Pin, GPIO_PIN_SET);
+	  if(d == 0) HAL_GPIO_WritePin(GPIOA, d_Pin, GPIO_PIN_RESET);
+	  else HAL_GPIO_WritePin(d_GPIO_Port, d_Pin, GPIO_PIN_SET);
+	  if(e == 0) HAL_GPIO_WritePin(e_GPIO_Port, e_Pin, GPIO_PIN_RESET);
+	  else HAL_GPIO_WritePin(e_GPIO_Port, e_Pin, GPIO_PIN_SET);
+	  if(f == 0) HAL_GPIO_WritePin(f_GPIO_Port, f_Pin, GPIO_PIN_RESET);
+	  else HAL_GPIO_WritePin(f_GPIO_Port, f_Pin, GPIO_PIN_SET);
+	  if(g == 0) HAL_GPIO_WritePin(g_GPIO_Port, g_Pin, GPIO_PIN_RESET);
+	  else HAL_GPIO_WritePin(g_GPIO_Port, g_Pin, GPIO_PIN_SET);
   }
   void display7SEG(int num) {
 	  if(num == 0) turn7SegLed(0, 0, 0, 0, 0, 0, 1);
