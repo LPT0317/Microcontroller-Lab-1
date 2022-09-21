@@ -266,8 +266,8 @@ int main(void)
  8000296:	2300      	movs	r3, #0
  8000298:	60fb      	str	r3, [r7, #12]
 	  }
-	  HAL_Delay(10);
- 800029a:	200a      	movs	r0, #10
+	  HAL_Delay(50);
+ 800029a:	2032      	movs	r0, #50	; 0x32
  800029c:	f000 f9d2 	bl	8000644 <HAL_Delay>
 	  clearAllClock();
  80002a0:	463b      	mov	r3, r7

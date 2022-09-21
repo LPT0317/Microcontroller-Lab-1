@@ -149,11 +149,11 @@ int main(void)
 	  if(hour == 12) {
 		  hour = 0;
 	  }
+	  HAL_Delay(50);
 	  clearAllClock();
 	  setNumberOnClock(second / 5);
 	  setNumberOnClock(minute / 5);
 	  setNumberOnClock(hour);
-	  HAL_Delay(50);
   }
   /* USER CODE END 3 */
 }
